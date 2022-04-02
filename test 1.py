@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt 
+import numpy as np
+n=3
+x=np.linspace(np.pi*(-n),np.pi*n,300)
+plt.title("plot all trigo functions")
+plt.xlabel("x values")
+plt.ylabel("y values ")
+y=np.sin(x)
+plt.plot(x,y,color="red")
+y=np.cos(x,y)
+plt.plot(x,y,color="green")
+y=np.tan(x,y)
+plt.plot(x,y)
+# y=np.cot(x,y)
+# plt.plot(x,y)
+# y=np.sec(x,y)
+# plt.plot(x,y)
+# y=np.cosec(x,y)
+plt.ylim(-2,2)
+# plt.xlim(np.pi*-1,np.pi*1)
+plt.plot(x,y)
+plt.show()
